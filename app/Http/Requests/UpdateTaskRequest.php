@@ -25,7 +25,7 @@ class UpdateTaskRequest extends FormRequest
         return [
             'title' => 'required|string|max:255|sometimes',
             'description' => 'required|string|sometimes',
-            'status' => 'sometimes|required'
+            'status' => 'sometimes|boolean'
         ];
     }
 }
