@@ -1,0 +1,9 @@
+$kind: http-request
+description: Returns a single task by its ID. Only the owner can access it. Returns 404 if the task does not exist.
+url: http://127.0.0.1:8000/api/tasks/2
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: 8|mNqkQz4l0gHBiwlyPdozS6gSnYrOMW6Rps1kVyed649d3669
+order: 3286999066653474

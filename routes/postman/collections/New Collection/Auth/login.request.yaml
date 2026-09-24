@@ -1,0 +1,14 @@
+$kind: http-request
+description: Authenticates a user with email and password. Returns a Sanctum bearer token on success, or 401 on invalid credentials.
+url: http://127.0.0.1:8000/api/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\": \"ali@example1.com\",\r
+
+    \    \"password\": \"MyPass123!1\"\r
+
+    }"
+order: 2585865116219163

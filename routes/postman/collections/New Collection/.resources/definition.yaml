@@ -1,0 +1,8 @@
+$kind: collection
+name: New Collection
+scripts:
+  - type: http:beforeRequest
+    language: text/javascript
+    code: |-
+      pm.request.headers.upsert({ key: 'Content-Type', value: 'application/json' });
+      pm.request.headers.upsert({ key: 'Accept', value: 'application/json' });

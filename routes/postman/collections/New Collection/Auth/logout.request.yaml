@@ -1,0 +1,9 @@
+$kind: http-request
+description: Revokes the current user's access token. Requires a valid Sanctum token in the Authorization header.
+url: http://127.0.0.1:8000/api/logout
+method: POST
+auth:
+  type: bearer
+  credentials:
+    token: 7|cz0rrJas0Rimtfq3n01gT30l3BsE6wvGgj205H9p170cea1d
+order: 3611658933212418

@@ -1,0 +1,9 @@
+$kind: http-request
+description: Deletes a task by its ID. Only the owner can delete it. Returns 204 No Content on success.
+url: http://127.0.0.1:8000/api/tasks/2
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: 8|mNqkQz4l0gHBiwlyPdozS6gSnYrOMW6Rps1kVyed649d3669
+order: 4491080090999941

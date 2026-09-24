@@ -1,0 +1,18 @@
+$kind: http-request
+description: Updates an existing task. Only the owner can update it. Accepts partial updates (title and/or description). Returns the updated task.
+url: http://127.0.0.1:8000/api/tasks/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"My first task - UPDATED\",\r
+
+    \    \"description\": \"This description was changed via Update endpoint\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: 8|mNqkQz4l0gHBiwlyPdozS6gSnYrOMW6Rps1kVyed649d3669
+order: 4408176368231579

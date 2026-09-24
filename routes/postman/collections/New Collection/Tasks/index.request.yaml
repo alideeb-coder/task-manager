@@ -1,0 +1,21 @@
+$kind: http-request
+description: |-
+  Returns a paginated list of tasks belonging to the currently authenticated user. Requires a valid Sanctum token.
+
+  Optional query parameters:
+
+  - ?status=0|1 → Filter tasks by completion status (0 = incomplete, 1 = complete).
+      
+  - ?search=word → Filter tasks whose title contains the given word.
+      
+  - ?page=N → Pagination page number (defaults to 1).
+      
+
+  Both filters can be combined (e.g., ?status=0&search=meeting). Returns 200 with a paginated JSON response.
+url: http://127.0.0.1:8000/api/tasks
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: 8|mNqkQz4l0gHBiwlyPdozS6gSnYrOMW6Rps1kVyed649d3669
+order: 1790094105375

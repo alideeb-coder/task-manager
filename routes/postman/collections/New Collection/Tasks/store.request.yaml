@@ -1,0 +1,18 @@
+$kind: http-request
+description: Creates a new task for the authenticated user. Requires a title; description is optional. Returns the created task with 201 status.
+url: http://127.0.0.1:8000/api/tasks
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"My first task\",\r
+
+    \    \"description\": \"This is a test task created from Postman\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: 8|mNqkQz4l0gHBiwlyPdozS6gSnYrOMW6Rps1kVyed649d3669
+order: 1120141591825226

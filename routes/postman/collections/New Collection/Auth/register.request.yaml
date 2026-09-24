@@ -1,0 +1,21 @@
+$kind: http-request
+description: Registers a new user. Requires name, email, and password. Returns a Sanctum token automatically on success.
+url: http://127.0.0.1:8000/api/register
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Ali\",\r
+
+    \    \"email\": \"ali@example2.com\",\r
+
+    \    \"password\": \"MyPass123!\",\r
+
+    \    \"password_confirmation\": \"MyPass123!\"\r
+
+    }"
+order: 1790091075696
